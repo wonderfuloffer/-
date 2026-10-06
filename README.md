@@ -1,3 +1,46 @@
-# Zoey Portfolio
+# 陈焯 Zoey · 个人网站
 
-Initialising repository for the site upload.
+页面设计参考 mykin.ai：暖米色纸张、深墨色文字、柔和金色点缀、胶片颗粒与宽松排版。
+
+## 页面结构
+
+| 页面 | 文件 | 说明 |
+| --- | --- | --- |
+| 首页首屏 | `index.html` | 左侧已写入姓名、英文名、年龄、城市、邮箱；保留鼠标跟随光斑动效 |
+| 关于我 | `index.html` 内 `#about` | 左侧照片位留空，右侧已填入个人介绍 |
+| 专业能力 | `index.html` 内 `#capabilities` | 3 张图轮换：小红书运营 / 媒介投放 / 项目支持 |
+| 3 个专业能力详情 | `service-*.html` | 小红书运营 / 媒介投放已有内容，项目支持已填正文 |
+
+## 动效
+
+- 首屏纸质光影：WebGL 背景还原 mykin.ai 的纸质光影效果——纸色渐变 + 随鼠标
+  平滑移动的暗角/亮区 + 蓝噪声颗粒，脚本见 `js/shader-bg.js`。
+- 详情页标题：进入页面后标题逐字以 GSAP `elastic` 弹性曲线“弹出”，
+  脚本见 `js/detail.js`，依赖 `js/vendor/gsap.min.js`（GSAP 核心库）。
+- 小红书运营详情页泡泡：两个泡泡内分别显示“情感咨询自媒体 / 图文设计·视频剪辑”，
+  文字在泡泡内漂浮；点击泡泡后泡泡破掉并平滑滚动到下方对应板块，
+  脚本见 `js/xiaohongshu.js`。
+- 小红书运营详情页动效：大标题“小红书运营”使用 effect089 果冻式标题运动
+  （响应滚动速度的 skew 拉伸，`js/scroll-effects.js`）；板块标题与正文段落使用
+  effect097 风格“逐行从底部放大、随滚动平滑收缩回正常尺寸”（`js/scroll-effects.js`）。
+- 小红书运营 · 情感咨询自媒体：已填入正文与配图 —— 主图
+  `images/xiaohongshu-emotional.jpg`（`.case-figure`），以及 01 部分
+  “市场切入 / 选题逻辑”的截图组 `images/xhs-market-*.jpg`、`images/xhs-topic-*.jpg`
+  （`.case-fig`）。
+
+## 后期替换位置
+
+- **个人照片**：把 `index.html` 中 `.portrait-frame` 换成自己的照片即可（介绍文字已填好）。
+- **专业能力 3 张图片**：目前是 `cap-art` 渐变占位；可换成自己的图片。
+  标题与跳转目标在 `.cap-card` 内，分别对应 3 个 `service-*.html`。
+- **详情页正文**：在 3 个专业能力详情页的 `.content-slot` 中写入自己的介绍与配图。
+
+## 轮换交互
+
+- 点击两侧模糊卡片：将该卡片切到中间。
+- 点击中间卡片或中间的“查看详情”：进入对应详情页。
+- 左右箭头、上方标签或键盘左右键：切换图片。
+
+## 预览
+
+直接双击 `index.html` 即可在浏览器中查看；CSS 与 JS 均为本地文件，不依赖网络。

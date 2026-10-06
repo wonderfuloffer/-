@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="陈焯 Zoey — 品牌推广策划 · 个人网站"
+    />
+    <title>陈焯 Zoey · 个人网站</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-nav" id="siteNav">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" aria-label="回到首页">
+          <span class="brand-name">陈焯</span>
+          <span class="brand-en">Zoey</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#capabilities">专业能力</a></li>
+        </ul>
+        <a class="nav-contact" href="mailto:1992362636@qq.com">1992362636@qq.com</a>
+        <button class="nav-burger" id="navBurger" type="button" aria-label="打开菜单" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ 首页 / 首屏 ============ -->
+      <section class="hero" id="home" aria-label="首页">
+        <div id="heroShader" class="hero-shader" aria-hidden="true">
+          <canvas></canvas>
+        </div>
+        <div class="hero-spotlight" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy" id="heroCopy">
+            <h1 class="hero-title reveal visible" id="heroTitle">陈焯</h1>
+            <p class="hero-ename reveal visible" id="heroName">Zoey</p>
+            <ul class="hero-facts reveal visible" id="heroFacts">
+              <li>22 岁</li>
+              <li>广州</li>
+              <li>
+                <a href="mailto:1992362636@qq.com">1992362636@qq.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span class="mouse-dot"></span>
+        </div>
+      </section>
+
+      <!-- ============ 第二页 / 关于我 ============ -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker">About</span>
+            <h2 class="section-title">关于我</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="portrait-wrap reveal">
+              <div class="portrait-frame">
+                <img src="images/me.jpg" width="750" height="1125" alt="陈焯照片" />
+              </div>
+            </div>
+
+            <!-- 右侧：个人介绍 -->
+            <div class="bio-panel reveal reveal-delay-1" aria-label="个人介绍">
+              <p class="bio-lead">陈焯 · 女 · 22 岁 · 射手座 · 现居广州</p>
+              <p>艺术专业出身，审美在线，擅长把抽象艺术感转化为可落地的内容方案；性格大方有分寸，既能主动推进合作，也懂得尊重团队边界。</p>
+              <p>我具备甲方市场运营思维与营销内容敏感度，有快消 / 服饰 / 零售 / 美妆等行业经验，擅长产品信息检索、卖点提炼、内容爆点挖掘与投流策略策划，熟悉小红书达人投放全流程及小红书 0-1 起号。</p>
+              <p>熟悉公众号、抖音、私域等多平台内容分发与联动获客，能独立完成内容策划、达人沟通、排期执行与数据复盘；习惯以用户画像和标签体系优化内容策略，提升转化与获客效率。</p>
+              <p>有个人 IP 从 0 到 1 运营经验，能拆解爆款、沉淀话术并搭建私域转化闭环。熟悉蒲公英、灰豚、千牛及剪映、可画、ChatGPT 等工具，审美与执行力兼具。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 第三页 / 专业能力（4 图轮换） ============ -->
+      <section class="section" id="capabilities">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker">Capabilities</span>
+            <h2 class="section-title">专业能力</h2>
+          </div>
+
+          <div class="cap-tabs reveal" role="tablist" aria-label="专业能力切换">
+            <button class="cap-tab active" type="button" role="tab" aria-selected="true" data-index="0">小红书运营</button>
+            <button class="cap-tab" type="button" role="tab" aria-selected="false" data-index="1">媒介投放</button>
+            <button class="cap-tab" type="button" role="tab" aria-selected="false" data-index="2">项目支持</button>
+          </div>
+
+          <div class="cap-stage reveal reveal-delay-1" id="capStage">
+            <div class="cap-carousel" id="capCarousel">
+              <a
+                class="cap-card active"
+                data-accent="gold"
+                data-title="小红书运营"
+                href="service-xiaohongshu.html"
+                aria-label="查看小红书运营详情"
+              >
+                <span class="inner">
+                  <span class="cap-art" aria-hidden="true"></span>
+                  <span class="cap-shade" aria-hidden="true"></span>
+                  <span class="cap-meta">
+                    <span class="cap-index">01</span>
+                    <span class="cap-title">小红书运营</span>
+                    <span class="cap-open">
+                      查看详情
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <polyline points="13 5 20 12 13 19"></polyline>
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </a>
+
+              <a
+                class="cap-card right-1"
+                data-accent="blue"
+                data-title="媒介投放"
+                href="service-media-placement.html"
+                aria-label="查看媒介投放详情"
+              >
+                <span class="inner">
+                  <span class="cap-art" aria-hidden="true"></span>
+                  <span class="cap-shade" aria-hidden="true"></span>
+                  <span class="cap-meta">
+                    <span class="cap-index">02</span>
+                    <span class="cap-title">媒介投放</span>
+                    <span class="cap-open">
+                      查看详情
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <polyline points="13 5 20 12 13 19"></polyline>
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </a>
+
+              <a
+                class="cap-card right-2"
+                data-accent="teal"
+                data-title="项目支持"
+                href="service-project-support.html"
+                aria-label="查看项目支持详情"
+              >
+                <span class="inner">
+                  <span class="cap-art" aria-hidden="true"></span>
+                  <span class="cap-shade" aria-hidden="true"></span>
+                  <span class="cap-meta">
+                    <span class="cap-index">03</span>
+                    <span class="cap-title">项目支持</span>
+                    <span class="cap-open">
+                      查看详情
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <polyline points="13 5 20 12 13 19"></polyline>
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="cap-controls reveal reveal-delay-2">
+            <button class="cap-arrow" id="capPrev" type="button" aria-label="上一张">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="cap-progress" id="capProgress" aria-hidden="true">
+              <i class="on"></i>
+              <i></i>
+              <i></i>
+            </div>
+            <button class="cap-arrow" id="capNext" type="button" aria-label="下一张">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <polyline points="9 6 15 12 9 18"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 陈焯 · Zoey</span>
+        <a href="mailto:1992362636@qq.com">1992362636@qq.com</a>
+      </div>
+    </footer>
+
+    <script src="js/vendor/noise-data.js"></script>
+    <script src="js/shader-bg.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
